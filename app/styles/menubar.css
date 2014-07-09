@@ -1,0 +1,123 @@
+.menubar{
+	position: absolute;	
+	z-index: 100;
+}
+.top{
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: 40px;	
+	background-color:rgba(0,0,0,0.7);
+}
+.left{
+	left:0px;
+	top:0px;
+	width: 40px;
+	height: 100%;	
+	background-color:rgba(0,0,0,0.7);
+}
+.right{
+	right:0px;
+	bottom:0px;
+	width: 40px;
+	height: 100%;	
+	background-color:rgba(0,0,0,0.7);
+}
+.bottom{
+	left:0px;
+	bottom:0px;
+	width: 100%;
+	height: 40px;	
+	background-color:rgba(0,0,0,0.7);
+}
+.menubar ul li{
+	float: left;
+	display: inline-block;
+}
+.menubar ul li a
+{
+	font-size: 12px;
+	color:#fff;
+	text-decoration: none;
+}
+
+/*左菜单*/
+.left ul 
+{
+ overflow: hidden;
+}
+.left li
+{
+	float: left;
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.left ul li a
+{
+	display: block;
+	text-align: center;
+	margin-left: 5px;
+	padding: 10px 0px 10px 0px;
+}
+.left ul li a:hover
+{
+	background-color:rgba(255,255,255,0.7); 
+	border-radius: 3px 0 0 3px;
+	color:#f9f9f9;
+
+}
+.left ul li a i
+{
+	display: block;
+	background: url('../images/menu-icon.png') no-repeat 0 0px;
+	width: 26px;
+	height: 26px;
+	margin:7px auto 2px;
+}
+.left .expandPanel
+{
+	position: absolute;
+	left:40px;
+	top:0px;
+	height: 100%;
+	width: 0px;
+	background-color: #f9f9f9;
+	border-radius: 0 15px 15px 0;
+}
+.left .current{
+	background-color:rgba(255,255,255,1); 
+	border-radius: 3px 0 0 3px;
+	color:#000;
+}
+
+.left .expandPanel .panel-top
+{
+	
+	position: relative;
+	height: 34px;
+	background: #f2f2f2;
+	border-radius: 0 10px 0 0;
+
+}
+.left .expandPanel .panel-title
+{
+	line-height: 34px;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+color: #525252;
+
+}
+.left .expandPanel .panel-close
+{
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	width: 23px;
+	height: 22px;
+	font: 0/0 a;
+	background: url("../images/menu-icon.png") 0 -90px no-repeat;
+}
+/*顶菜单*/
+
